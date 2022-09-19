@@ -1,0 +1,20 @@
+﻿<Window x:Class="calendar.CreateCalendarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calendar"
+        mc:Ignorable="d"
+        Title="CreateCalendarWindow" Height="450" Width="800" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="757*"/>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="25" Margin="25,10,403,371">Создать календарь</TextBlock>
+        <TextBox x:Name="title" Margin="25,62,423,323" FontSize="15">Название</TextBox>
+        <TextBox x:Name="description" Margin="25,110,423,181" FontSize="15">Описание</TextBox>
+        <ComboBox x:Name="timeZones" Margin="25,252,423,137"/>
+        <Button Margin="25,314,560,68" RenderTransformOrigin="0.507,0" FontSize="15" Background="Blue" Foreground="White" Click="SaveCalendar_Click" Content="Сохранить календарь"/>
+    </Grid>
+</Window>

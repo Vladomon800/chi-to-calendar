@@ -1,0 +1,23 @@
+﻿<Window x:Class="calendar.ViewAndColor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calendar"
+        mc:Ignorable="d"
+        Title="ViewAndColor" Height="163.495" Width="822" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <Label Content="Выберите цвета мероприятия, цвет текста и интерфейс" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ColorComboBox" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="395" SelectedIndex="0" SelectionChanged="ComboBoxColorSelectionChanged">
+            <ComboBoxItem Content="Современный вариант (с белым текстом)"/>
+            <ComboBoxItem Content="Классический вариант (с черным текстом)"/>
+        </ComboBox>
+        <Label Content="Набор цветов" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="ViewComboBox"  HorizontalAlignment="Left" Margin="410,72,-13,0" VerticalAlignment="Top" Width="395" SelectedIndex="0" SelectionChanged="ComboBoxViewSelectionChanged" >
+            <ComboBoxItem Content="Адаптивное"/>
+            <ComboBoxItem Content="Компактное"/>
+        </ComboBox>
+        <Button x:Name="ButtonDone" Content="Готово" HorizontalAlignment="Left" Margin="729,102,0,0" VerticalAlignment="Top" Width="75" Click="ButtonDoneClick"/>
+        <Label Content="Представление информации" HorizontalAlignment="Left" Margin="410,41,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
